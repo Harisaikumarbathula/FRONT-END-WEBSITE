@@ -1,0 +1,119 @@
+body{
+    width:100vw;
+    
+}
+nav{
+    margin:0;
+    background-color: yellow;
+    height:50px;
+    width:100vw;
+    border-radius: 4px;
+}
+nav ul{
+ list-style: none;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  justify-content: space-around;
+}
+.homeDiv{
+    width: 100vw;
+    display: flex;
+    background-image:linear-gradient(#1FA0FF,#12DAFB,#a7fdcc) ;
+}
+.homeDiv section{
+    width:50%;
+    font-size: xx-large;
+    text-align: center;
+}
+.homeDiv img{
+    width:50%;
+}
+#aboutDiv{
+        width: 100vw;
+            display: flex;
+background-color: yellow;
+}
+#aboutDiv section{
+    padding: 40px;
+        width: 50%;
+            font-size: xx-large;
+            text-align: center;
+}
+#aboutDiv img {
+    width: 50%;
+
+}
+#awesomeDiv{
+    width:100vw;
+text-align: center;
+
+}
+#awesomeDiv div{
+    display: flex;
+    justify-content: space-around;
+}
+#awesomeDiv div section{
+    flex: 0.2;
+    box-shadow: 0 0 5px grey;
+    border: 1px solid black;
+    padding: 20px;
+}
+#details{
+    width:100vw;
+    text-align: center;}
+#details div{
+    display: flex;
+    justify-content: space-around;
+}
+#details div section {   
+     flex: 0.2;
+        border: 1px solid black;
+
+}
+#details div section h3{
+        padding: 10px;
+}
+#details div section div{
+    color:white;
+    font-size: larger;
+    text-shadow: 0 2px 3px black;
+}
+.WhoWeAre{
+    display: flex;
+   text-align: center;
+    background-color: yellow;
+}
+.WhoWeAre img{
+    width:50%;
+}
+.WhoWeAre section {
+    padding: 20px;
+    width: 50%;
+    font-size: x-large;
+}
+.contact{
+    display: flex;
+        text-align: center;
+    background-image:linear-gradient(#1FA0FF,#12DAFB,#a7fdcc) ;
+}
+.contact section{
+    width: 50%;
+    padding: 20px;
+}
+.contact section button{
+    width: 250px;
+    background-color: transparent;
+    outline: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact button p{
+    font-size: large;
+}
+.contact img{
+    width: 50%;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="sample.css">
+<style>
+.container{
+    background-image:linear-gradient(#1FA0FF,#12DAFB,#a7fdcc) ;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        box-sizing: border-box;
+}
+.container1{
+    width: 60%;
+    padding-left: 55px;
+    border: 3px solid black;
+    border-radius: 40px;
+    margin: 15px;
+}
+.container1 h1{
+    text-align: center;
+}
+.container1 input{
+      width: 70%;
+      margin: 5px 0 22px 0;
+      padding: 5px;
+      display: inline-block;
+      border: 2px solid black;
+      border-radius: 40px;
+      background: #f1f1f1;
+    }
+    .container1 #Submit{
+      width: 15%;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: 2px solid black;
+      border-radius: 40px;
+      font-weight: bold;
+      font-size: 20px;
+      background: transparent;
+    }
+
+.container1 label{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1px;
+    color: black;
+    text-align: center;
+  }
+.container1 section{
+    width: 20%;
+}
+.container1 section button{
+    width: 125px;
+    height: 35px;
+    outline: none;
+    border-radius: 20px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.container1 button {
+    font-size: large;
+    justify-content: center;
+}
+.container section  span{
+    width: 220px;
+    height: 50px;
+    outline: none;
+    border: solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 19px;
+}
+
+.container2{
+    padding-top: 100px;
+    align-items: center;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="container1"> 
+<form id="myForm" method="post">
+        <h1>SIGN UP</h1>
+       <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phoneNo">Phone Number:</label><br>
+        <input type="tel" id="phoneNo" name="phoneNo" required><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="confirmPassword">Confirm Password:</label><br>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+        <input type="submit" id="Submit" value="SIGNUP">
+</form>
+<section>
+          <br>
+          <span>
+          <b>Signup With</b>
+          <img id="Image2" src="facebook.png" style="width: 20%;" alt="">&nbsp;
+          <img id="Image" src="Google.png" style="width: 20%;" alt="">&nbsp;
+<script>
+            const form = document.getElementById('myForm');
+            form.addEventListener('submit', function(event) {
+            const name = form.name.value;
+            const phoneNo = form.phoneNo.value;
+            const email = form.email.value;
+            const password = form.password.value;
+            const confirmPassword = form.confirmPassword.value;
+            if (!isValidName(name)) {
+                    event.preventDefault();
+                    alert('Please enter a valid name.');
+                }
+                if (!isValidEmail(email)) {
+                    event.preventDefault();
+                    alert('Please enter a valid email address.');
+                }
+    
+                if (!isValidPhoneNo(phoneNo)) {
+                    event.preventDefault();
+                    alert('Please enter a valid phone number.');
+                }
+    
+                if (!isValidPassword(password)) {
+                    event.preventDefault();
+                    alert('Please enter a valid password (at least 8 characters).');
+                } else if (password !== confirmPassword) {
+                    event.preventDefault();
+                    alert('Passwords do not match.');
+                }
+            });
+    
+            function isValidName(name) {
+                return /^[a-zA-Z\s]+$/.test(name);
+            }
+    
+            function isValidEmail(email) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            }
+    
+            function isValidPhoneNo(phoneNo) {
+                return /^\d{10}$/.test(phoneNo);
+            }
+    
+            function isValidPassword(password) {
+                return password.length >= 8;
+            }
+const Image = document.getElementById('Image');
+const link = "https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=AXo7B7WNtIx1Pux_vKK5j0e_cnj0igi_RJUesUxtprsSNdBeh7ClJzolUCvXJFxSoJPPkd5zHVXaIg&passive=1209600&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1827904988%3A1691511778728080";
+Image.addEventListener('click', () => {                            
+window.open(link, '_blank');
+});
+
+const Image2 = document.getElementById('Image2');
+const page = "https://www.facebook.com/"
+Image2.addEventListener('click', () => {                            
+window.open(page, '_blank');
+});
+    </script>
+          </span>
+</section>
+          <a href="sign.html"><h2>already have a account?</h2></a>
+</form>              
+</div>
+<div class="container2">
+<img src="signup.png" alt="signup">
+</div>
+</div>
+</body>
+</html>

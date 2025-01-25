@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="javascript" href="index.js">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#section1">HOME</a> </li>
+            <li><a href="#section2">ABOUT US</a> </li>
+            <li><a href="#section8">CONTACT US</a> </li>
+            <li><a href="sign.html">SIGN IN</a> </li>
+        </ul>
+    </nav>
+    <div class="homeDiv">
+<section id="section1">
+    <h1>All-In-One <br> LifeStyle Hub</h1>
+    <br>
+    <p>Vielda</p> <br>
+    <hr style="width:50%">
+</section>
+<img src="pexels-emmy-e-2381069.jpg" alt="">
+    </div>
+    <div id="aboutDiv">
+<section id="section2">
+    <h2>About The <br> App</h2>
+    <span>What's special about your product,
+        service, or company? Use this space
+        to highlight the things that set you
+        apart from your competition, whether
+        it's a special feature, a unique
+        philosophy, or awards and
+        recognition that you have received.
+        Think of this as your elevator pitch to
+        get the reader's attention.</span>
+</section>
+<img src="pexels-tirachard-kumtanom-601170.jpg" alt="">
+    </div>
+    <div id="awesomeDiv">
+        <h2>WHAT MAKES US AWESOME</h2> <br><br>
+       <div >
+        <section id="section3">
+            <img src="scholar.png" style="width: 70%;height: 150px;" alt="">
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut corporis in ipsa, libero itaque recusandae.
+        </section>
+        <section id="section4">
+            <img src="global-education.png" style="width: 70%;height: 150px;" alt="">
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut corporis in ipsa, libero itaque recusandae.
+        </section>
+        <section>
+            <img src="graduation-hat.png" style="width: 70%;height: 150px;" alt="">
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut corporis in ipsa, libero itaque recusandae.
+        </section>
+       </div>
+    </div> <br><br>
+    <div id="details">
+        <h2>PRESS AND MEDIA</h2><br><br>
+<div>
+    <section id="section5">
+       <div style="width:100%;background-color: rgba(0,0,0,0.3);"><img src="pexels-daniel-xavier-1239291.jpg" style="width: 70%;height: 150px;object-fit: cover;" alt="">
+    <p style="width:30%"> <br><br><br> Sharmila</p></div>
+        <br>
+     <h3>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut corporis in ipsa, libero itaque recusandae.
+     </h3>
+    </section>
+    <section>
+        <div style="width:100%;background-color: rgba(0,0,0,0.3);"><img src="pexels-justin-shaifer-1222271.jpg"
+                style="width: 70%;height: 150px;object-fit: cover;" alt="">
+            <p style="width:30%"> <br><br><br> Abraham</p>
+        </div>
+        <br>
+        <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut corporis in ipsa, libero itaque recusandae.
+        </h3>
+    </section>
+    <section>
+        <div style="width:100%;background-color: rgba(0,0,0,0.3);"><img src="pexels-pixabay-220453.jpg"
+                style="width: 70%;height: 150px;object-fit: cover;" alt="">
+            <p style="width:30%"> <br><br><br> John Ibrahim</p>
+        </div>
+        <br>
+        <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut corporis in ipsa, libero itaque recusandae.
+        </h3>
+    </section id="section6">
+</div>
+<br><br>
+    </div>
+    <div class="WhoWeAre">
+<img src="pexels-emmy-e-2381069.jpg" alt="">
+<section id="section7">
+    <h2>WHO WE ARE</h2>
+    <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, ipsam. Iusto impedit at iure voluptatem soluta nemo vel magni optio. Quam omnis optio exercitationem ducimus, ut vero praesentium inventore dolore. Quam omnis optio exercitationem ducimus, ut vero praesentium inventore dolore.</h4>
+</section>
+    </div>
+    <div class="contact">
+        <section id="section8">
+            <h2>CONTACT</h2>
+            <br>
+    
+            <button><p>PHONE</p> <p>123456789</p> </button> <br>
+            <button>
+                <p>EMAIL</p>
+                <p>kkkkk@gmail.com</p>
+            </button> <br>
+            <button >
+                <p>SOCIAL</p>
+                <span><img id="clickableImage" src="linkedin.png" style="width: 20%;" alt="">&nbsp;
+                    <img id="clickableImage1" src="instagram.png" style="width: 20%;" alt="">&nbsp;
+                    <img id="clickableImage2" src="facebook.png" style="width: 20%;" alt="">&nbsp;
+                    <img id="clickableImage3" src="twitter.png" style="width: 20%;" alt="">
+                    <script>
+const clickableImage = document.getElementById('clickableImage');
+const websiteURL = "https://in.linkedin.com/";
+clickableImage.addEventListener('click', () => {                            
+window.open(websiteURL, '_blank');
+});
+
+const clickableImage1 = document.getElementById('clickableImage1');
+const URL = "https://www.instagram.com/";
+clickableImage1.addEventListener('click', () => {                            
+window.open(URL, '_blank');
+});
+
+const clickableImage2 = document.getElementById('clickableImage2');
+const link = "https://www.facebook.com/";
+clickableImage2.addEventListener('click', () => {                            
+window.open(link, '_blank');
+});
+
+const clickableImage3 = document.getElementById('clickableImage3');
+const page = "https://www.twitter.com/"
+clickableImage3.addEventListener('click', () => {                            
+window.open(page, '_blank');
+});
+                    </script>
+                    
+            </span>
+            </button> <br>
+            <form action="">
+                <h3>For any queries</h3>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter Your Query"></textarea> <br>
+                <input type="submit" value="SEND QUERY">
+            </form>
+        </section>
+    
+        <img src="pexels-daniel-xavier-1239291.jpg"  alt="">
+    </div>
+</body>
+</html>
